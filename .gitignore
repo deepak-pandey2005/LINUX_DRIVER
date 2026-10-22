@@ -1,5 +1,34 @@
-*.ko
+# Kernel object files and modules
 *.o
+*.ko
+*.mod
+*.mod.c
 *.mod.o
-*.symvers
-*.order
+*.mod.cmd
+
+# Build dependency and symbol tracking files
+*.cmd
+.*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Module.markers
+.cache.mk
+
+# Debugging and assembly artifacts
+*.dwo
+*.su
+*.s
+*.i
+
+# Editor and patch backups
+*.orig
+*.rej
+*~
+.#*
+.vscode/
+.idea/
+
+# User-space test binaries
+test_app
+*.bin
