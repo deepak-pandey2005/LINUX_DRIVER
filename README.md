@@ -35,8 +35,8 @@ LINUX_DRIVER/
 | | Multi-File Drivers & Exporting Symbols (`EXPORT_SYMBOL_GPL`) | ✅ Ready | [03_export_symbols](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/01_module_basics/03_export_symbols/README.md) | [Doc 03](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/03_symbol_export_and_dependencies.md) |
 | **Phase 2: Character Devices** | Major & Minor Numbers (`alloc_chrdev_region`, `dev_t`) | ✅ Ready | [04_major_minor](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/02_character_devices/01_major_minor/README.md) | [Doc 04](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/04_character_device_numbers.md) |
 | | `struct cdev` & File Operations (`open`, `release`, `read`, `write`) | ✅ Ready | [05_cdev_file_ops](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/02_character_devices/02_cdev_file_ops/README.md) | [Doc 05](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/05_cdev_and_file_operations.md) |
-| | Dynamic Device Nodes & udev (`class_create`, `device_create`) | 🔜 Next | `06_device_nodes` | `docs/06_udev_sysfs_integration.md` |
-| | Safe Memory Transfer (`copy_to_user`, `copy_from_user`) | ⏳ Queued | `07_user_kernel_copy` | `docs/07_kernel_memory_access.md` |
+| | Dynamic Device Nodes & udev (`class_create`, `device_create`) | ✅ Ready | [06_device_nodes](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/02_character_devices/03_udev_device_creation/README.md) | [Doc 06](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/06_udev_and_sysfs_device_nodes.md) |
+| | Safe Memory Transfer (`copy_to_user`, `copy_from_user`) | 🔜 Next | `07_user_kernel_copy` | `docs/07_kernel_memory_access.md` |
 | **Phase 3: Control & Virtual FS** | IOCTL Interface (`_IO`, `_IOR`, `_IOW`, `_IOWR`) | ⏳ Queued | `08_ioctl` | `docs/08_ioctl_subsystem.md` |
 | | Procfs Diagnostic Interface (`proc_create`, `proc_ops`) | ⏳ Queued | `09_procfs` | `docs/09_procfs_internals.md` |
 | | Sysfs & Kernel Objects (`kobject`, `DEVICE_ATTR_RW`) | ⏳ Queued | `10_sysfs_kobjects` | `docs/10_sysfs_architecture.md` |

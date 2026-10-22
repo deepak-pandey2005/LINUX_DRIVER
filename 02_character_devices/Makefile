@@ -1,8 +1,8 @@
 # Makefile for Phase 2: Character Device Drivers
 
-SUBDIRS := 01_major_minor 02_cdev_file_ops
+SUBDIRS := 01_major_minor 02_cdev_file_ops 03_udev_device_creation
 
-.PHONY: all clean load_num unload_num check_devices load_cdev test_cdev unload_cdev status logs help $(SUBDIRS)
+.PHONY: all clean load_num unload_num check_devices load_cdev test_cdev unload_cdev load_udev test_udev unload_udev status logs help $(SUBDIRS)
 
 all: $(SUBDIRS)
 
@@ -34,6 +34,16 @@ test_cdev:
 unload_cdev:
 	$(MAKE) -C 02_cdev_file_ops unload
 
+# Lab 06 shortcuts (class_create & udev dynamic node creation)
+load_udev:
+	$(MAKE) -C 03_udev_device_creation load
+
+test_udev:
+	$(MAKE) -C 03_udev_device_creation test
+
+unload_udev:
+	$(MAKE) -C 03_udev_device_creation unload
+
 help:
 	@echo "Phase 02: Character Device Drivers"
 	@echo "Available targets:"
@@ -45,3 +55,6 @@ help:
 	@echo "  make load_cdev     - Load Chapter 05 (02_cdev_file_ops)"
 	@echo "  make test_cdev     - Run user-space test app on Chapter 05"
 	@echo "  make unload_cdev   - Unload Chapter 05"
+	@echo "  make load_udev     - Load Chapter 06 (03_udev_device_creation)"
+	@echo "  make test_udev     - Test unprivileged read/write on auto-created node"
+	@echo "  make unload_udev   - Unload Chapter 06"
