@@ -33,8 +33,8 @@ LINUX_DRIVER/
 | **Phase 1: Module Basics** | Hello World, Module Lifecycle, `pr_fmt`, `insmod`/`rmmod` | ✅ Ready | [01_hello_world](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/01_module_basics/01_hello_world/README.md) | [Doc 01](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/01_kernel_module_architecture.md) |
 | | Module Parameters (`module_param`, sysfs runtime configuration) | ✅ Ready | [02_module_parameters](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/01_module_basics/02_module_parameters/README.md) | [Doc 02](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/02_module_parameters_and_sysfs.md) |
 | | Multi-File Drivers & Exporting Symbols (`EXPORT_SYMBOL_GPL`) | ✅ Ready | [03_export_symbols](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/01_module_basics/03_export_symbols/README.md) | [Doc 03](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/03_symbol_export_and_dependencies.md) |
-| **Phase 2: Character Devices** | Major & Minor Numbers (`alloc_chrdev_region`, `dev_t`) | 🔜 Next | `04_major_minor` | `docs/04_chrdev_allocation.md` |
-| | `struct cdev` & File Operations (`open`, `release`, `read`, `write`) | ⏳ Queued | `05_cdev_file_ops` | `docs/05_cdev_and_vfs.md` |
+| **Phase 2: Character Devices** | Major & Minor Numbers (`alloc_chrdev_region`, `dev_t`) | ✅ Ready | [04_major_minor](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/02_character_devices/01_major_minor/README.md) | [Doc 04](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/04_character_device_numbers.md) |
+| | `struct cdev` & File Operations (`open`, `release`, `read`, `write`) | 🔜 Next | `05_cdev_file_ops` | `docs/05_cdev_and_vfs.md` |
 | | Dynamic Device Nodes & udev (`class_create`, `device_create`) | ⏳ Queued | `06_device_nodes` | `docs/06_udev_sysfs_integration.md` |
 | | Safe Memory Transfer (`copy_to_user`, `copy_from_user`) | ⏳ Queued | `07_user_kernel_copy` | `docs/07_kernel_memory_access.md` |
 | **Phase 3: Control & Virtual FS** | IOCTL Interface (`_IO`, `_IOR`, `_IOW`, `_IOWR`) | ⏳ Queued | `08_ioctl` | `docs/08_ioctl_subsystem.md` |
