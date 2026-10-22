@@ -3,7 +3,8 @@
 SUBDIRS := 01_module_basics/01_hello_world \
            01_module_basics/02_module_parameters \
            01_module_basics/03_export_symbols \
-           02_character_devices/01_major_minor
+           02_character_devices/01_major_minor \
+           02_character_devices/02_cdev_file_ops
 
 .PHONY: all clean help $(SUBDIRS)
 
