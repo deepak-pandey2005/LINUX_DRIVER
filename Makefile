@@ -1,6 +1,6 @@
 # Top-level Makefile for Linux Driver Curriculum
 
-SUBDIRS := 01_module_basics/01_hello_world 01_module_basics/02_module_parameters
+SUBDIRS := 01_module_basics/01_hello_world 01_module_basics/02_module_parameters 01_module_basics/03_export_symbols
 
 .PHONY: all clean help $(SUBDIRS)
 

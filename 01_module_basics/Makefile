@@ -1,6 +1,6 @@
 # Makefile for 01_module_basics phase
 
-SUBDIRS := 01_hello_world 02_module_parameters
+SUBDIRS := 01_hello_world 02_module_parameters 03_export_symbols
 
 .PHONY: all clean load_hello unload_hello load_param load_param_custom test_param unload_param status logs help $(SUBDIRS)
 
