@@ -31,4 +31,8 @@ Module.markers
 
 # User-space test binaries
 test_app
+test_client
 *.bin
+
+# Compilation database
+compile_commands.json

@@ -1,0 +1,64 @@
+# Clangd configuration for Linux Kernel Driver workspace
+CompileFlags:
+  Remove:
+    - -mrecord-mcount
+    - -mpreferred-stack-boundary=*
+    - -fconserve-stack
+    - -mindirect-branch=*
+    - -mindirect-branch-register
+    - -mindirect-branch-cs-prefix
+    - -mfunction-return=*
+    - -fpatchable-function-entry=*
+    - -fmin-function-alignment=*
+    - -mskip-rax-setup
+    - -fzero-init-padding-bits=*
+    - -ftrivial-auto-var-init=*
+    - -fno-allow-store-data-races
+    - -fstrict-flex-arrays=*
+    - -fno-stack-clash-protection
+    - -falign-jumps=*
+    - -falign-loops=*
+    - -mno-80387
+    - -mno-fp-ret-in-387
+
+Diagnostics:
+  Suppress:
+    - drv_unsupported_opt_for_target
+    - -Wunknown-warning-option
+
+---
+If:
+  PathMatch: .*/test_.*\.c$
+CompileFlags:
+  Remove:
+    - -nostdinc
+    - -D__KERNEL__
+    - -DMODULE
+    - -include*
+  Add:
+    - -I/usr/include
+    - -I/usr/include/x86_64-linux-gnu
+
+---
+If:
+  PathExclude: .*/test_.*\.c$
+CompileFlags:
+  Add:
+    - -nostdinc
+    - -isystem/usr/lib/gcc/x86_64-pc-linux-gnu/16/include
+    - -I/usr/lib/modules/7.2.11-arch1-1/build/arch/x86/include
+    - -I/usr/lib/modules/7.2.11-arch1-1/build/arch/x86/include/generated
+    - -I/usr/lib/modules/7.2.11-arch1-1/build/include
+    - -I/usr/lib/modules/7.2.11-arch1-1/build/arch/x86/include/uapi
+    - -I/usr/lib/modules/7.2.11-arch1-1/build/arch/x86/include/generated/uapi
+    - -I/usr/lib/modules/7.2.11-arch1-1/build/include/uapi
+    - -I/usr/lib/modules/7.2.11-arch1-1/build/include/generated/uapi
+    - -include
+    - /usr/lib/modules/7.2.11-arch1-1/build/include/linux/compiler-version.h
+    - -include
+    - /usr/lib/modules/7.2.11-arch1-1/build/include/linux/kconfig.h
+    - -include
+    - /usr/lib/modules/7.2.11-arch1-1/build/include/linux/compiler_types.h
+    - -D__KERNEL__
+    - -DMODULE
+    - -std=gnu11
