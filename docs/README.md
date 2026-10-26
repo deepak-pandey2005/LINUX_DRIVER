@@ -75,7 +75,7 @@ graph TD
 
 ### **Phase 3: Control Interfaces & Virtual Filesystems**
 - **08_ioctl** - Unlocked IOCTL handler, standard Linux ioctl numbering macros (`_IO`, `_IOR`, `_IOW`, `_IOWR`), type safety, and userspace test client. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/03_io_and_control/01_ioctl/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/08_ioctl_subsystem_and_hardware_control.md).
-- **09_procfs_interface** - Diagnostic interfaces using `proc_create()` with `struct proc_ops`, exporting system health data.
+- **09_procfs_interface** - Diagnostic interfaces using `proc_create()` with `struct proc_ops`, `seq_file` pagination, and runtime tunables. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/03_io_and_control/02_procfs/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/09_procfs_diagnostic_interface.md).
 - **10_sysfs_and_kobjects** - sysfs tree architecture, `struct kobject`, `sysfs_create_group()`, and `DEVICE_ATTR_RW()` for clean hardware telemetry.
 
 ### **Phase 4: Concurrency, Synchronization & Memory**

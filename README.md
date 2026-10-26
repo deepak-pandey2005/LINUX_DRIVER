@@ -38,8 +38,8 @@ LINUX_DRIVER/
 | | Dynamic Device Nodes & udev (`class_create`, `device_create`) | ✅ Ready | [06_device_nodes](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/02_character_devices/03_udev_device_creation/README.md) | [Doc 06](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/06_udev_and_sysfs_device_nodes.md) |
 | | Safe Memory Transfer & Ring Buffer (`copy_to/from_user`) | ✅ Ready | [07_ring_buffer](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/02_character_devices/04_ring_buffer/README.md) | [Doc 07](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/07_kernel_memory_access_and_circular_buffers.md) |
 | **Phase 3: Control & Virtual FS** | IOCTL Interface (`_IO`, `_IOR`, `_IOW`, `_IOWR`) | ✅ Ready | [08_ioctl](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/03_io_and_control/01_ioctl/README.md) | [Doc 08](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/08_ioctl_subsystem_and_hardware_control.md) |
-| | Procfs Diagnostic Interface (`proc_create`, `proc_ops`) | 🔜 Next | `09_procfs` | `docs/09_procfs_internals.md` |
-| | Sysfs & Kernel Objects (`kobject`, `DEVICE_ATTR_RW`) | ⏳ Queued | `10_sysfs_kobjects` | `docs/10_sysfs_architecture.md` |
+| | Procfs Diagnostic Interface (`proc_create`, `proc_ops`) | ✅ Ready | [09_procfs](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/03_io_and_control/02_procfs/README.md) | [Doc 09](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/09_procfs_diagnostic_interface.md) |
+| | Sysfs & Kernel Objects (`kobject`, `DEVICE_ATTR_RW`) | 🔜 Next | `10_sysfs_kobjects` | `docs/10_sysfs_architecture.md` |
 | **Phase 4: Concurrency & Memory** | Spinlocks, Mutexes, Atomics, RCU (SMP safety) | ⏳ Queued | `11_locking` | `docs/11_concurrency_and_locking.md` |
 | | Dynamic Memory (`kmalloc`, `vmalloc`, `mmap`, `remap_pfn_range`) | ⏳ Queued | `12_memory_mmap` | `docs/12_kernel_memory_management.md` |
 | **Phase 5: Interrupts & Timers** | Hardware IRQs (`request_irq`, Top Half vs Bottom Half) | ⏳ Queued | `13_interrupts` | `docs/13_interrupt_handling.md` |

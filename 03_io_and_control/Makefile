@@ -1,8 +1,8 @@
 # Makefile for Phase 3: Control Interfaces & Virtual Filesystems
 
-SUBDIRS := 01_ioctl
+SUBDIRS := 01_ioctl 02_procfs
 
-.PHONY: all clean load_ioctl test_ioctl unload_ioctl help $(SUBDIRS)
+.PHONY: all clean load_ioctl test_ioctl unload_ioctl load_proc test_proc unload_proc help $(SUBDIRS)
 
 all: $(SUBDIRS)
 
@@ -24,6 +24,16 @@ test_ioctl:
 unload_ioctl:
 	$(MAKE) -C 01_ioctl unload
 
+# Lab 09 shortcuts (Procfs Diagnostic Interface & seq_file)
+load_proc:
+	$(MAKE) -C 02_procfs load
+
+test_proc:
+	$(MAKE) -C 02_procfs test
+
+unload_proc:
+	$(MAKE) -C 02_procfs unload
+
 help:
 	@echo "Phase 03: Control Interfaces & Virtual Filesystems"
 	@echo "Available targets:"
@@ -32,3 +42,6 @@ help:
 	@echo "  make load_ioctl   - Load Chapter 08 (01_ioctl)"
 	@echo "  make test_ioctl   - Run user-space IOCTL test suite on Chapter 08"
 	@echo "  make unload_ioctl - Unload Chapter 08"
+	@echo "  make load_proc    - Load Chapter 09 (02_procfs)"
+	@echo "  make test_proc    - Run procfs test suite on Chapter 09"
+	@echo "  make unload_proc  - Unload Chapter 09"
