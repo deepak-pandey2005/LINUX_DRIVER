@@ -39,10 +39,10 @@ LINUX_DRIVER/
 | | Safe Memory Transfer & Ring Buffer (`copy_to/from_user`) | ✅ Ready | [07_ring_buffer](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/02_character_devices/04_ring_buffer/README.md) | [Doc 07](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/07_kernel_memory_access_and_circular_buffers.md) |
 | **Phase 3: Control & Virtual FS** | IOCTL Interface (`_IO`, `_IOR`, `_IOW`, `_IOWR`) | ✅ Ready | [08_ioctl](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/03_io_and_control/01_ioctl/README.md) | [Doc 08](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/08_ioctl_subsystem_and_hardware_control.md) |
 | | Procfs Diagnostic Interface (`proc_create`, `proc_ops`) | ✅ Ready | [09_procfs](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/03_io_and_control/02_procfs/README.md) | [Doc 09](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/09_procfs_diagnostic_interface.md) |
-| | Sysfs & Kernel Objects (`kobject`, `DEVICE_ATTR_RW`) | 🔜 Next | `10_sysfs_kobjects` | `docs/10_sysfs_architecture.md` |
-| **Phase 4: Concurrency & Memory** | Spinlocks, Mutexes, Atomics, RCU (SMP safety) | ⏳ Queued | `11_locking` | `docs/11_concurrency_and_locking.md` |
-| | Dynamic Memory (`kmalloc`, `vmalloc`, `mmap`, `remap_pfn_range`) | ⏳ Queued | `12_memory_mmap` | `docs/12_kernel_memory_management.md` |
-| **Phase 5: Interrupts & Timers** | Hardware IRQs (`request_irq`, Top Half vs Bottom Half) | ⏳ Queued | `13_interrupts` | `docs/13_interrupt_handling.md` |
+| | Sysfs & Kernel Objects (`kobject`, `attribute_group`) | ✅ Ready | [10_sysfs](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/03_io_and_control/03_sysfs/README.md) | [Doc 10](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/10_sysfs_and_kobjects.md) |
+| **Phase 4: Concurrency & Memory** | Spinlocks, Mutexes, Atomics (SMP safety & benchmarking) | ✅ Ready | [11_locking](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/04_concurrency_and_memory/01_locking/README.md) | [Doc 11](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/11_concurrency_and_locking.md) |
+| | Kernel Memory & Zero-Copy mmap (`remap_pfn_range`) | ✅ Ready | [12_memory_mmap](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/04_concurrency_and_memory/02_memory_mmap/README.md) | [Doc 12](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/12_kernel_memory_management.md) |
+| **Phase 5: Interrupts & Timers** | Hardware IRQs (`request_irq`, Top Half vs Bottom Half) | 🔜 Next | `13_interrupts` | `docs/13_interrupt_handling.md` |
 | | Workqueues & Threaded IRQs | ⏳ Queued | `14_workqueues` | `docs/14_deferred_execution.md` |
 | | Kernel Timers (`timer_list`, `hrtimer`, `jiffies`, `msleep`) | ⏳ Queued | `15_timers` | `docs/15_timers_and_delays.md` |
 | **Phase 6: Device Model & Buses** | Linux Device Model & Platform Drivers (`probe`, `remove`) | ⏳ Queued | `16_platform_driver` | `docs/16_linux_device_model.md` |

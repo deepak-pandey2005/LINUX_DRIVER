@@ -76,11 +76,11 @@ graph TD
 ### **Phase 3: Control Interfaces & Virtual Filesystems**
 - **08_ioctl** - Unlocked IOCTL handler, standard Linux ioctl numbering macros (`_IO`, `_IOR`, `_IOW`, `_IOWR`), type safety, and userspace test client. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/03_io_and_control/01_ioctl/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/08_ioctl_subsystem_and_hardware_control.md).
 - **09_procfs_interface** - Diagnostic interfaces using `proc_create()` with `struct proc_ops`, `seq_file` pagination, and runtime tunables. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/03_io_and_control/02_procfs/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/09_procfs_diagnostic_interface.md).
-- **10_sysfs_and_kobjects** - sysfs tree architecture, `struct kobject`, `sysfs_create_group()`, and `DEVICE_ATTR_RW()` for clean hardware telemetry.
+- **10_sysfs_and_kobjects** - sysfs tree architecture, `struct kobject`, `sysfs_create_group()`, and modern `sysfs_emit()`. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/03_io_and_control/03_sysfs/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/10_sysfs_and_kobjects.md).
 
 ### **Phase 4: Concurrency, Synchronization & Memory**
-- **11_concurrency_and_locking** - Protecting shared resources in SMP kernels: `atomic_t`, spinlocks (`spin_lock_irqsave`), mutexes (`mutex_lock`), and rules for atomic vs process contexts.
-- **12_kernel_memory_management** - Dynamic allocation (`kmalloc`, `vmalloc`, GFP flags like `GFP_KERNEL` vs `GFP_ATOMIC`), page allocation (`alloc_pages`), and memory-mapping driver buffers to userspace with `remap_pfn_range` via `mmap`.
+- **11_concurrency_and_locking** - Protecting shared resources in SMP kernels: `atomic64_t`, spinlocks (`spinlock_t`), mutexes (`struct mutex`), multi-threaded contention benchmarking and race condition reproduction. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/04_concurrency_and_memory/01_locking/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/11_concurrency_and_locking.md).
+- **12_kernel_memory_management** - Physical memory allocation (`alloc_pages`, `get_zeroed_page`), page reserving (`SetPageReserved`), PFN conversion, and zero-copy user-kernel mapping via `remap_pfn_range` in `.mmap`. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/04_concurrency_and_memory/02_memory_mmap/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/12_kernel_memory_management.md).
 
 ### **Phase 5: Interrupts & Deferred Processing**
 - **13_interrupt_handling** - Hardware IRQ lines, `request_irq()`, interrupt context constraints (no sleeping!), shared IRQs (`IRQF_SHARED`).

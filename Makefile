@@ -8,7 +8,10 @@ SUBDIRS := 01_module_basics/01_hello_world \
            02_character_devices/03_udev_device_creation \
            02_character_devices/04_ring_buffer \
            03_io_and_control/01_ioctl \
-           03_io_and_control/02_procfs
+           03_io_and_control/02_procfs \
+           03_io_and_control/03_sysfs \
+           04_concurrency_and_memory/01_locking \
+           04_concurrency_and_memory/02_memory_mmap
 
 .PHONY: all clean help $(SUBDIRS)
 
