@@ -90,3 +90,4 @@ sudo make unload
 ## 5. Architectural Guide
 
 For the full theoretical breakdown of the Linux Virtual Memory Subsystem, SLAB/SLUB allocators, highmem, caching modes (`pgprot_noncached`), and page tables, see [docs/12_kernel_memory_management.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/12_kernel_memory_management.md).
+

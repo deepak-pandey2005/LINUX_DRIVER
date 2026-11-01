@@ -19,3 +19,4 @@
 #define MMAP_IOCTL_KERNEL_READ_STR _IOR(MMAP_MAGIC, 3, char[64])
 
 #endif /* MMAP_IOCTL_H */
+

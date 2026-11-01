@@ -323,3 +323,4 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Deepak Pandey");
 MODULE_DESCRIPTION("Chapter 10: Sysfs & Kernel Objects Diagnostic Telemetry Interface");
 MODULE_VERSION("1.0");
+

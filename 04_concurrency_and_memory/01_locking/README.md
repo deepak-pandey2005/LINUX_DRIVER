@@ -78,3 +78,4 @@ sudo make unload
 ## 5. Architectural Guide
 
 For the full theoretical breakdown of SMP memory barriers, cache coherency (MESI), lockdep validator, deadlocks, and RCU (Read-Copy-Update), see [docs/11_concurrency_and_locking.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/11_concurrency_and_locking.md).
+

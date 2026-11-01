@@ -101,3 +101,4 @@ sudo make unload
 ## 5. Architectural Guide
 
 For the full theoretical breakdown of `struct kobject`, reference counting (`kref`), sysfs vs procfs design principles, and uevents, see [docs/10_sysfs_and_kobjects.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/10_sysfs_and_kobjects.md).
+

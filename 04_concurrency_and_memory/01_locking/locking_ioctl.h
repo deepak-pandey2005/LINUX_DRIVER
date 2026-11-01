@@ -32,3 +32,4 @@ struct locking_results {
 #define LOCKING_IOCTL_GET_RESULTS _IOR(LOCKING_MAGIC_MAGIC, 5, struct locking_results)
 
 #endif /* LOCKING_IOCTL_H */
+

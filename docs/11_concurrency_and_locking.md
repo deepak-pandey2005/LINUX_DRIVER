@@ -125,3 +125,4 @@ graph TD
     InIRQ -- Yes --> UseSpinIRQ["Use spin_lock_irqsave()"]
     InIRQ -- No --> UseSpin["Use spin_lock()"]
 ```
+

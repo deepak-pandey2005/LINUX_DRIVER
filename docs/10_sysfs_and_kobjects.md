@@ -128,3 +128,4 @@ static const struct attribute_group telemetry_attr_group = {
 - **Atomic Creation**: `sysfs_create_group()` registers all files in one operation.
 - **Race Condition Prevention**: Prevents user-space udev rules from triggering while attributes are only partially exposed.
 - **Clean Cleanup**: `sysfs_remove_group()` tears down all nodes atomically during module exit.
+
