@@ -106,3 +106,4 @@ Call Trace:
 - **Avoid heavy computation inside Kprobe handlers**: Kprobe handlers execute with local interrupts disabled or in atomic contexts. Do not sleep, hold mutexes, or call blocking I/O functions.
 - **Always unregister probes before unloading**: Unloading a module while active Kprobes are still planted causes immediate kernel panics upon the next invocation of the probed address.
 - **Use atomic counters (`atomic64_t`)** for cross-core hit tracking to avoid costly spinlocks on high-frequency routines.
+
