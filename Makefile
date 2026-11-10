@@ -16,7 +16,8 @@ SUBDIRS := 01_module_basics/01_hello_world \
            05_interrupts_and_timers/02_workqueues \
            05_interrupts_and_timers/03_timers \
            06_device_model_and_buses/01_platform_driver \
-           06_device_model_and_buses/02_device_tree
+           06_device_model_and_buses/02_device_tree \
+           06_device_model_and_buses/03_gpio_driver
 
 .PHONY: all clean help $(SUBDIRS)
 

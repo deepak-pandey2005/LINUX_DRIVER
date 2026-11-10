@@ -1,7 +1,7 @@
 # Makefile for Phase 6: Device Model & Hardware Buses
-SUBDIRS := 01_platform_driver 02_device_tree
+SUBDIRS := 01_platform_driver 02_device_tree 03_gpio_driver
 
-.PHONY: all clean load_platform test_platform unload_platform load_dt test_dt unload_dt help $(SUBDIRS)
+.PHONY: all clean load_platform test_platform unload_platform load_dt test_dt unload_dt load_gpio test_gpio unload_gpio help $(SUBDIRS)
 
 all: $(SUBDIRS)
 
@@ -32,6 +32,16 @@ test_dt:
 
 unload_dt:
 	$(MAKE) -C 02_device_tree unload
+
+# Lab 18 shortcuts (GPIO Subsystem)
+load_gpio:
+	$(MAKE) -C 03_gpio_driver load
+
+test_gpio:
+	$(MAKE) -C 03_gpio_driver test
+
+unload_gpio:
+	$(MAKE) -C 03_gpio_driver unload
 
 help:
 	@echo "Phase 06: Device Model & Hardware Buses"
