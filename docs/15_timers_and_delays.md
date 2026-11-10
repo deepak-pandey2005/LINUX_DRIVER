@@ -103,3 +103,4 @@ When a driver must wait for hardware to change states:
 - `usleep_range(min_us, max_us)`: Preferred for short sleeps (10 us to 20 ms). Backed by hrtimers with power-saving slack.
 - `msleep(ms)`: Uninterruptible millisecond sleep (for >= 10 ms).
 - `msleep_interruptible(ms)`: Sleep that awakens early if a signal is received.
+

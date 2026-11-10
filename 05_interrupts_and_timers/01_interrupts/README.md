@@ -89,3 +89,4 @@ sudo make unload
 ## 5. Architectural Guide
 
 For the full theoretical breakdown of APIC/GIC architectures, interrupt priority, edge vs level triggering, and interrupt context vs process context, see [docs/13_interrupt_handling.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/13_interrupt_handling.md).
+

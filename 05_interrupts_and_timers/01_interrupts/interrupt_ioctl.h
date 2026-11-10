@@ -27,3 +27,4 @@ struct irq_stats {
 #define IRQ_IOCTL_RESET_STATS      _IO(IRQ_DEMO_MAGIC, 3)
 
 #endif /* INTERRUPT_IOCTL_H */
+

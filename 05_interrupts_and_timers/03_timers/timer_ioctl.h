@@ -29,3 +29,4 @@ struct timer_stats {
 #define TIMER_IOCTL_GET_STATS _IOR(TIMER_DEMO_MAGIC, 5, struct timer_stats)
 
 #endif /* TIMER_IOCTL_H */
+

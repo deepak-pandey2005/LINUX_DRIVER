@@ -232,3 +232,4 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Deepak Pandey");
 MODULE_DESCRIPTION("Chapter 13: Hardware & Shared Interrupt Handling (request_irq, IRQF_SHARED, Top-Half ISR)");
 MODULE_VERSION("1.0");
+

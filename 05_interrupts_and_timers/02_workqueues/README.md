@@ -78,3 +78,4 @@ sudo make unload
 ## 5. Architectural Guide
 
 For the full theoretical breakdown of bottom halves (Softirqs vs Tasklets [legacy] vs Workqueues vs Threaded IRQs), concurrency models, and CMwq (Concurrency Managed Workqueues), see [docs/14_deferred_execution.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/14_deferred_execution.md).
+

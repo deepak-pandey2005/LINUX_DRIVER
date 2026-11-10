@@ -77,3 +77,4 @@ When an interrupt line is shared (`IRQF_SHARED`):
   - If yes: Acknowledge hardware, service event, and return `IRQ_HANDLED`.
   - If no: Immediately return `IRQ_NONE` so other drivers can service it.
 - If all handlers return `IRQ_NONE` repeatedly, the kernel detects an unhandled spurious interrupt and reports `irq XX: nobody cared`.
+

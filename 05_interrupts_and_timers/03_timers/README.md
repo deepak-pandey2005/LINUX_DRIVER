@@ -79,3 +79,4 @@ sudo make unload
 ## 5. Architectural Guide
 
 For the full theoretical breakdown of tickless kernels (`CONFIG_NO_HZ`), the timer wheel algorithm, clock sources, and high-resolution timekeeping architecture, see [docs/15_timers_and_delays.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/15_timers_and_delays.md).
+

@@ -30,3 +30,4 @@ struct wq_stats {
 #define WQ_IOCTL_GET_STATS       _IOR(WQ_MAGIC, 5, struct wq_stats)
 
 #endif /* WORKQUEUE_IOCTL_H */
+
