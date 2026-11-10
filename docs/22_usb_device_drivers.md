@@ -105,3 +105,4 @@ When a device with matching Vendor/Product ID is attached, USB Core calls the dr
 - **Never block inside URB completion handlers**: The `complete` callback executes in softirq (interrupt) context. Do not sleep, allocate with `GFP_KERNEL`, or hold mutexes.
 - **Always cancel active URBs upon disconnect**: Call `usb_kill_urb(urb)` in `.disconnect` before freeing buffers or driver structures.
 - **Reference counting**: Use `usb_get_dev(udev)` and `usb_put_dev(udev)` to ensure the device structure is not freed while transfers are still pending.
+

@@ -45,3 +45,4 @@ cat /sys/class/usb_demo_class/usb_demo_dev/usb_stats
 sudo rmmod usb_driver_module
 make clean
 ```
+
