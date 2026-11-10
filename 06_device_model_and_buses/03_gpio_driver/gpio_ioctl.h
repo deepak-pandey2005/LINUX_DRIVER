@@ -33,3 +33,4 @@ struct gpio_chip_info {
 #define GPIO_IOCTL_GET_CHIP_INFO _IOR(GPIO_DEMO_MAGIC, 5, struct gpio_chip_info)
 
 #endif /* GPIO_IOCTL_H */
+

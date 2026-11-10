@@ -71,3 +71,4 @@ gpiod_set_value(reset_gpio, 1); /* Assert reset (GPIOLIB handles active-low inve
 - **Automatic Inversion**: The Device Tree property `gpios = <&gpio1 15 GPIO_ACTIVE_LOW>` is honored automatically by GPIOLIB. Setting `1` asserts the logical signal, regardless of whether hardware is active-high or active-low.
 - **Resource Management**: Managed with `devm_gpiod_get()` to eliminate memory/resource leaks.
 - **IRQs**: `gpiod_to_irq()` transparently maps a GPIO pin to a hardware IRQ number for `request_irq()`.
+

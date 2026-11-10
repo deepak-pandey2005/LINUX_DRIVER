@@ -80,3 +80,4 @@ sudo make unload
 ## 5. Architectural Guide
 
 For the full theoretical breakdown of GPIOLIB, active-low inversion flags, debounce filters, and GPIO character device ABI v2 (`/dev/gpiochipN`), see [docs/18_gpio_subsystem.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/18_gpio_subsystem.md).
+
