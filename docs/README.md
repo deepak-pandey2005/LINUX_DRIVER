@@ -95,8 +95,9 @@ graph TD
 - **20_dma_engine** - Direct Memory Access: coherent (`dma_alloc_coherent`) vs streaming (`dma_map_single`, `dma_sync_*`) DMA buffers, bus addressing (`dma_addr_t`), and simulated high-speed DMA streaming engine. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/05_dma_engine/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/20_dma_engine.md).
 
 ### **Phase 7: Advanced Subsystems & Kernel Diagnostics**
-- **21_subsystems** - Architecture of standard subsystems (Network `net_device`, USB `usb_driver`, Industrial I/O `iio_info`).
-- **22_kernel_debugging_and_profiling** - Dynamic debug (`dyndbg`), Ftrace, eBPF tracing, Kprobes, memory leak detection with `Kmemleak`, lock debugging with `Lockdep`, and deciphering kernel panics.
+- **21_network_device_drivers** - Architecture of standard Linux network device drivers: `struct net_device`, `alloc_etherdev`, MAC address generation, `net_device_ops` (`ndo_open`, `ndo_stop`, `ndo_start_xmit`, `ndo_get_stats64`), Socket Buffers (`sk_buff`), softirq RX packet injection (`netif_rx`), and sysfs statistics. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/07_advanced_subsystems/01_network_driver/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/21_network_device_drivers.md).
+- **22_usb_device_drivers** - USB Subsystem architecture, `struct usb_driver`, device identification table (`usb_device_id`), endpoints & descriptors (bulk, interrupt, isochronous), and asynchronous USB Request Blocks (URBs).
+- **23_kernel_debugging_and_tracing** - Dynamic debug (`pr_debug`), Kprobes (`struct kprobe`, `pre_handler`, `post_handler`), Ftrace, eBPF tracing, memory leak detection with Kmemleak, and deciphering kernel panics.
 
 ---
 
