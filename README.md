@@ -45,8 +45,8 @@ LINUX_DRIVER/
 | **Phase 5: Interrupts & Timers** | Hardware IRQs (`request_irq`, Top Half vs Bottom Half) | ✅ Ready | [13_interrupts](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/05_interrupts_and_timers/01_interrupts/README.md) | [Doc 13](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/13_interrupt_handling.md) |
 | | Workqueues & Threaded IRQs | ✅ Ready | [14_workqueues](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/05_interrupts_and_timers/02_workqueues/README.md) | [Doc 14](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/14_deferred_execution.md) |
 | | Kernel Timers (`timer_list`, `hrtimer`, `jiffies`, `msleep`) | ✅ Ready | [15_timers](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/05_interrupts_and_timers/03_timers/README.md) | [Doc 15](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/15_timers_and_delays.md) |
-| **Phase 6: Device Model & Buses** | Linux Device Model & Platform Drivers (`probe`, `remove`) | 🔜 Next | `16_platform_driver` | `docs/16_linux_device_model.md` |
-| | Device Tree (DTS/DTB, `of_device_id`, OF property parsing) | ⏳ Queued | `17_device_tree` | `docs/17_device_tree.md` |
+| **Phase 6: Device Model & Buses** | Linux Device Model & Platform Drivers (`probe`, `remove`) | ✅ Ready | [16_platform_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/01_platform_driver/README.md) | [Doc 16](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/16_linux_device_model.md) |
+| | Device Tree (DTS/DTB, `of_device_id`, OF property parsing) | 🔜 Next | `17_device_tree` | `docs/17_device_tree.md` |
 | | GPIO Subsystem (Modern `gpiod` Consumer API) | ⏳ Queued | `18_gpio_driver` | `docs/18_gpio_subsystem.md` |
 | | I2C Client Drivers (`i2c_driver`, SMBus, registers) | ⏳ Queued | `19_i2c_sensor` | `docs/19_i2c_bus_driver.md` |
 | | DMA Engine (Coherent & Streaming DMA, Scatter-Gather) | ⏳ Queued | `20_dma_engine` | `docs/20_dma_engine.md` |

@@ -14,7 +14,8 @@ SUBDIRS := 01_module_basics/01_hello_world \
            04_concurrency_and_memory/02_memory_mmap \
            05_interrupts_and_timers/01_interrupts \
            05_interrupts_and_timers/02_workqueues \
-           05_interrupts_and_timers/03_timers
+           05_interrupts_and_timers/03_timers \
+           06_device_model_and_buses/01_platform_driver
 
 .PHONY: all clean help $(SUBDIRS)
 
