@@ -71,3 +71,4 @@ static struct i2c_driver my_driver = {
 };
 module_i2c_driver(my_driver);
 ```
+

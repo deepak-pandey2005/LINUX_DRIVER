@@ -67,3 +67,4 @@ sudo make unload
 ## 4. Architectural Guide
 
 For the full theoretical breakdown of I2C protocol arbitration, clock stretching, repeated starts, and SMBus vs raw I2C, see [docs/19_i2c_bus_driver.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/19_i2c_bus_driver.md).
+

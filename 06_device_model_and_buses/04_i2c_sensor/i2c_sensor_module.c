@@ -380,3 +380,4 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Deepak Pandey");
 MODULE_DESCRIPTION("Chapter 19: I2C Client Drivers & Simulated Sensor Subsystem");
 MODULE_VERSION("1.0");
+

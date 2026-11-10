@@ -24,3 +24,4 @@ struct i2c_temp_data {
 #define I2C_IOCTL_SET_CONFIG   _IOW(I2C_SENSOR_MAGIC, 2, __u8)
 
 #endif /* I2C_SENSOR_IOCTL_H */
+
