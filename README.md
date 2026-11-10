@@ -49,8 +49,8 @@ LINUX_DRIVER/
 | | Device Tree (DTS/DTB, `of_device_id`, OF property parsing) | ✅ Ready | [17_device_tree](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/02_device_tree/README.md) | [Doc 17](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/17_device_tree.md) |
 | | GPIO Subsystem (Modern `gpiod` Consumer API) | ✅ Ready | [18_gpio_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/03_gpio_driver/README.md) | [Doc 18](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/18_gpio_subsystem.md) |
 | | I2C Client Drivers (`i2c_driver`, SMBus, registers) | ✅ Ready | [19_i2c_sensor](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/04_i2c_sensor/README.md) | [Doc 19](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/19_i2c_bus_driver.md) |
-| | DMA Engine (Coherent & Streaming DMA, Scatter-Gather) | 🔜 Next | `20_dma_engine` | `docs/20_dma_engine.md` |
-| **Phase 7: Advanced Mastery** | Subsystems (Network `net_device`, USB, IIO) | ⏳ Queued | `21_subsystems` | `docs/21_subsystems.md` |
+| | DMA Engine (Coherent & Streaming DMA, Scatter-Gather) | ✅ Ready | [20_dma_engine](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/05_dma_engine/README.md) | [Doc 20](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/20_dma_engine.md) |
+| **Phase 7: Advanced Subsystems** | Network Device Driver (`net_device`, RX/TX, `sk_buff`) | 🔜 Next | `21_network_driver` | `docs/21_network_device_drivers.md` |
 | | Tracing, Debugging, KASAN, Lockdep, Oops Analysis | ⏳ Queued | `22_debugging` | `docs/22_kernel_debugging.md` |
 
 For the full detailed curriculum and architecture roadmap, see the [Curriculum Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/README.md).
