@@ -90,3 +90,4 @@ power_save = device_property_read_bool(&pdev->dev, "power-saving");
 - Adding daughterboards on industrial carrier boards.
 
 An overlay targeting a node injects child nodes or modifies properties using `fragment` and `__overlay__` blocks without rebooting the system.
+

@@ -70,3 +70,4 @@ sudo make unload
 ## 4. Architectural Guide
 
 For the full theoretical breakdown of Flattened Device Trees (FDT), Device Tree Compiler (`dtc`), overlay merging, and OF memory address translation, see [docs/17_device_tree.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/17_device_tree.md).
+

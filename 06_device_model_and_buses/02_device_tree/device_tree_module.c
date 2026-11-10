@@ -282,3 +282,4 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Deepak Pandey");
 MODULE_DESCRIPTION("Chapter 17: Device Tree Simulation & OF Property Parsing");
 MODULE_VERSION("1.0");
+
