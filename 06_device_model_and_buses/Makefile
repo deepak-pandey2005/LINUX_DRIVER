@@ -1,7 +1,7 @@
 # Makefile for Phase 6: Device Model & Hardware Buses
-SUBDIRS := 01_platform_driver 02_device_tree 03_gpio_driver
+SUBDIRS := 01_platform_driver 02_device_tree 03_gpio_driver 04_i2c_sensor
 
-.PHONY: all clean load_platform test_platform unload_platform load_dt test_dt unload_dt load_gpio test_gpio unload_gpio help $(SUBDIRS)
+.PHONY: all clean load_platform test_platform unload_platform load_dt test_dt unload_dt load_gpio test_gpio unload_gpio load_i2c test_i2c unload_i2c help $(SUBDIRS)
 
 all: $(SUBDIRS)
 
@@ -42,6 +42,16 @@ test_gpio:
 
 unload_gpio:
 	$(MAKE) -C 03_gpio_driver unload
+
+# Lab 19 shortcuts (I2C Bus & Sensor Driver)
+load_i2c:
+	$(MAKE) -C 04_i2c_sensor load
+
+test_i2c:
+	$(MAKE) -C 04_i2c_sensor test
+
+unload_i2c:
+	$(MAKE) -C 04_i2c_sensor unload
 
 help:
 	@echo "Phase 06: Device Model & Hardware Buses"
