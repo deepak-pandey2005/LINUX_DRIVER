@@ -271,3 +271,4 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Deepak Pandey");
 MODULE_DESCRIPTION("Chapter 16: Linux Device Model & Platform Driver (probe, remove, resources)");
 MODULE_VERSION("1.0");
+

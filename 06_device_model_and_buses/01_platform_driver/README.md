@@ -68,3 +68,4 @@ sudo make unload
 ## 4. Architectural Guide
 
 For the full theoretical breakdown of kobjects, bus types, device binding algorithms, and power management callbacks, see [docs/16_linux_device_model.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/16_linux_device_model.md).
+

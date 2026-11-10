@@ -68,3 +68,4 @@ Memory allocated with `devm_*` is automatically reclaimed when the device is unb
 platform_set_drvdata(pdev, priv);
 struct my_priv *priv = platform_get_drvdata(pdev);
 ```
+
