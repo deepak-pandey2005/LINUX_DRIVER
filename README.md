@@ -52,7 +52,7 @@ LINUX_DRIVER/
 | | DMA Engine (Coherent & Streaming DMA, Scatter-Gather) | ✅ Ready | [20_dma_engine](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/05_dma_engine/README.md) | [Doc 20](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/20_dma_engine.md) |
 | **Phase 7: Advanced Subsystems** | Network Device Driver (`net_device`, RX/TX, `sk_buff`) | ✅ Ready | [21_network_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/07_advanced_subsystems/01_network_driver/README.md) | [Doc 21](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/21_network_device_drivers.md) |
 | | USB Device Driver & URB Subsystem (`usb_driver`, URBs) | ✅ Ready | [22_usb_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/07_advanced_subsystems/02_usb_driver/README.md) | [Doc 22](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/22_usb_device_drivers.md) |
-| | Tracing, Debugging, Kprobes & Ftrace Diagnostics | ⏳ Queued | `23_debugging` | `docs/23_kernel_debugging_and_tracing.md` |
+| | Tracing, Debugging, Kprobes & Ftrace Diagnostics | ✅ Ready | [23_debugging](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/07_advanced_subsystems/03_debugging_and_tracing/README.md) | [Doc 23](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/23_kernel_debugging_and_tracing.md) |
 
 For the full detailed curriculum and architecture roadmap, see the [Curriculum Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/README.md).
 
