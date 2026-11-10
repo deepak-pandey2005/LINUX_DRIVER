@@ -83,9 +83,9 @@ graph TD
 - **12_kernel_memory_management** - Physical memory allocation (`alloc_pages`, `get_zeroed_page`), page reserving (`SetPageReserved`), PFN conversion, and zero-copy user-kernel mapping via `remap_pfn_range` in `.mmap`. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/04_concurrency_and_memory/02_memory_mmap/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/12_kernel_memory_management.md).
 
 ### **Phase 5: Interrupts & Deferred Processing**
-- **13_interrupt_handling** - Hardware IRQ lines, `request_irq()`, interrupt context constraints (no sleeping!), shared IRQs (`IRQF_SHARED`).
-- **14_deferred_execution** - Modern deferred work mechanisms: standard workqueues (`INIT_WORK`, `schedule_work`), dedicated workqueues, and threaded IRQs (`request_threaded_irq`).
-- **15_timers_and_delays** - Jiffies, `HZ`, `timer_list` API (`timer_setup`, `mod_timer`), high-resolution timers (`hrtimer`), and delay mechanisms (`msleep` vs `mdelay`).
+- **13_interrupt_handling** - Hardware IRQ lines, `request_irq()`, `IRQF_SHARED`, interrupt context constraints (no sleeping!), top-half ISR conventions, and multi-core CPU tracking. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/05_interrupts_and_timers/01_interrupts/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/13_interrupt_handling.md).
+- **14_deferred_execution** - Modern deferred work mechanisms: standard workqueues (`INIT_WORK`, `schedule_work`), dedicated unpinned workqueues (`alloc_workqueue`), delayed work (`schedule_delayed_work`), and synchronous cancellation. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/05_interrupts_and_timers/02_workqueues/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/14_deferred_execution.md).
+- **15_timers_and_delays** - Jiffies, `HZ`, `timer_list` API (`timer_setup`, `mod_timer`, `timer_shutdown_sync`), modern high-resolution timers (`hrtimer_setup`, `hrtimer_start`), and delay mechanisms (`msleep` vs `usleep_range` vs `udelay`). See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/05_interrupts_and_timers/03_timers/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/15_timers_and_delays.md).
 
 ### **Phase 6: The Linux Device Model & Hardware Buses**
 - **16_linux_device_model** - The unified kernel object model: Busses, Devices, and Drivers. Implementing Platform Devices & Platform Drivers (`platform_driver_register`, `probe`, `remove`).
