@@ -80,3 +80,4 @@ sudo make unload
 ## 5. Architectural Guide
 
 For the full theoretical breakdown of IOMMUs (Intel VT-d, ARM SMMU), cache line bouncing, bounce buffers (`swiotlb`), and DMA scatter-gather lists, see [docs/20_dma_engine.md](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/20_dma_engine.md).
+

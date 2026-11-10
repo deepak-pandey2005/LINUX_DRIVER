@@ -55,3 +55,4 @@ dma_unmap_single(&pdev->dev, dma_handle, skb->len, DMA_TO_DEVICE);
 If a driver accesses a streaming buffer before unmapping it:
 - **`dma_sync_single_for_cpu()`**: Flushes hardware updates to CPU cache and invalidates stale cache lines.
 - **`dma_sync_single_for_device()`**: Writes dirty CPU cache lines back to RAM so the device sees new data.
+

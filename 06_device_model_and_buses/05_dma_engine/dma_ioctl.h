@@ -27,3 +27,4 @@ struct dma_status_info {
 #define DMA_IOCTL_GET_STATUS     _IOR(DMA_DEMO_MAGIC, 2, struct dma_status_info)
 
 #endif /* DMA_IOCTL_H */
+
