@@ -78,3 +78,4 @@ In this chapter's driver (`virtual_net_module.c`):
 - Always protect statistics updates with spinlocks or use per-CPU 64-bit sequence counters (`u64_stats_t`) for lockless high-throughput telemetry.
 - Use `GFP_ATOMIC` inside transmission contexts (`ndo_start_xmit`), as packet sending may occur in softirq or atomic contexts.
 - Handle queue throttling with `netif_stop_queue(dev)` when hardware descriptor rings fill up, and `netif_wake_queue(dev)` when ring slots become available again.
+
