@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Device Tree Overlay Example for Chapter 17
+ * Target: ARM / Embedded Linux (Raspberry Pi, BeagleBone, QEMU ARM virt)
+ */
+
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2835", "ti,am33xx", "allwinner,sun8i-h3";
+
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            custom_sensor: custom_sensor@0 {
+                compatible = "packt,custom-sensor";
+                status = "okay";
+                clock-frequency = <400000>;      /* 400 kHz bus clock */
+                sampling-rate = <100>;           /* 100 Hz sampling */
+                sensor-label = "ACCEL_GYRO_V2";
+                power-saving;                    /* Boolean property */
+            };
+        };
+    };
+};

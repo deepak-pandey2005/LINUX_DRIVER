@@ -89,7 +89,7 @@ graph TD
 
 ### **Phase 6: The Linux Device Model & Hardware Buses**
 - **16_linux_device_model** - The unified kernel object model: Busses, Devices, and Drivers. Implementing Platform Devices & Platform Drivers (`platform_driver_register`, `probe`, `remove`, `devm_kzalloc`, resource extraction). See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/01_platform_driver/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/16_linux_device_model.md).
-- **17_device_tree** - Open Firmware (OF) device tree matching (`of_device_id`), parsing node properties (`of_property_read_u32`, `of_property_read_string`), and overlays.
+- **17_device_tree** - Open Firmware (OF) device tree matching (`of_device_id`, `MODULE_DEVICE_TABLE`), parsing node properties (`device_property_read_u32`, `device_property_read_string`, boolean flags), DTS overlays, and software node simulation. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/02_device_tree/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/17_device_tree.md).
 - **18_gpio_subsystem** - Modern GPIO descriptor API (`<linux/gpio/consumer.h>`), GPIO control, and handling GPIO interrupts.
 - **19_i2c_bus_driver** - `struct i2c_driver`, bus probing, register read/write using SMBus protocol, and simulated sensor device.
 - **20_dma_engine** - Direct Memory Access: coherent (`dma_alloc_coherent`) vs streaming (`dma_map_single`) DMA buffers and scatter-gather lists.

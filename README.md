@@ -46,8 +46,8 @@ LINUX_DRIVER/
 | | Workqueues & Threaded IRQs | ✅ Ready | [14_workqueues](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/05_interrupts_and_timers/02_workqueues/README.md) | [Doc 14](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/14_deferred_execution.md) |
 | | Kernel Timers (`timer_list`, `hrtimer`, `jiffies`, `msleep`) | ✅ Ready | [15_timers](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/05_interrupts_and_timers/03_timers/README.md) | [Doc 15](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/15_timers_and_delays.md) |
 | **Phase 6: Device Model & Buses** | Linux Device Model & Platform Drivers (`probe`, `remove`) | ✅ Ready | [16_platform_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/01_platform_driver/README.md) | [Doc 16](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/16_linux_device_model.md) |
-| | Device Tree (DTS/DTB, `of_device_id`, OF property parsing) | 🔜 Next | `17_device_tree` | `docs/17_device_tree.md` |
-| | GPIO Subsystem (Modern `gpiod` Consumer API) | ⏳ Queued | `18_gpio_driver` | `docs/18_gpio_subsystem.md` |
+| | Device Tree (DTS/DTB, `of_device_id`, OF property parsing) | ✅ Ready | [17_device_tree](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/06_device_model_and_buses/02_device_tree/README.md) | [Doc 17](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/17_device_tree.md) |
+| | GPIO Subsystem (Modern `gpiod` Consumer API) | 🔜 Next | `18_gpio_driver` | `docs/18_gpio_subsystem.md` |
 | | I2C Client Drivers (`i2c_driver`, SMBus, registers) | ⏳ Queued | `19_i2c_sensor` | `docs/19_i2c_bus_driver.md` |
 | | DMA Engine (Coherent & Streaming DMA, Scatter-Gather) | ⏳ Queued | `20_dma_engine` | `docs/20_dma_engine.md` |
 | **Phase 7: Advanced Mastery** | Subsystems (Network `net_device`, USB, IIO) | ⏳ Queued | `21_subsystems` | `docs/21_subsystems.md` |
