@@ -58,6 +58,7 @@ LINUX_DRIVER/
 | | Linux Input Subsystem & Virtual Controller Driver | ✅ Ready | [26_input_subsystem](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/03_input_subsystem/README.md) | [Doc 26](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/26_input_subsystem.md) |
 | | Watchdog Timer Subsystem & Heartbeat Daemon Driver | ✅ Ready | [27_watchdog_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/04_watchdog_driver/README.md) | [Doc 27](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/27_watchdog_subsystem.md) |
 | | Linux PWM (Pulse Width Modulation) Subsystem | ✅ Ready | [28_pwm_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/05_pwm_driver/README.md) | [Doc 28](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/28_pwm_subsystem.md) |
+| | Linux Kernel Cryptographic API (SHA-256, HMAC, Transforms) | ✅ Ready | [29_crypto_api](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/06_crypto_api/README.md) | [Doc 29](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/29_crypto_api.md) |
 
 For the full detailed curriculum and architecture roadmap, see the [Curriculum Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/README.md).
 

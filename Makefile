@@ -27,7 +27,8 @@ SUBDIRS := 01_module_basics/01_hello_world \
            08_specialized_subsystems/02_iio_sensor \
            08_specialized_subsystems/03_input_subsystem \
            08_specialized_subsystems/04_watchdog_driver \
-           08_specialized_subsystems/05_pwm_driver
+           08_specialized_subsystems/05_pwm_driver \
+           08_specialized_subsystems/06_crypto_api
 
 .PHONY: all clean help $(SUBDIRS)
 
