@@ -60,6 +60,7 @@ LINUX_DRIVER/
 | | Linux PWM (Pulse Width Modulation) Subsystem | ✅ Ready | [28_pwm_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/05_pwm_driver/README.md) | [Doc 28](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/28_pwm_subsystem.md) |
 | | Linux Kernel Cryptographic API (SHA-256, HMAC, Transforms) | ✅ Ready | [29_crypto_api](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/06_crypto_api/README.md) | [Doc 29](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/29_crypto_api.md) |
 | | PCI / PCIe Subsystem & MSI-X Interrupt Vectors | ✅ Ready | [30_pci_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/07_pci_driver/README.md) | [Doc 30](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/30_pci_subsystem.md) |
+| | Device Power Management & Runtime PM (Autosuspend) | ✅ Ready | [31_power_management](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/08_power_management/README.md) | [Doc 31](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/31_power_management.md) |
 
 For the full detailed curriculum and architecture roadmap, see the [Curriculum Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/README.md).
 
