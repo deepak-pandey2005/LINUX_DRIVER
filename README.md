@@ -57,6 +57,7 @@ LINUX_DRIVER/
 | | Industrial I/O (IIO) Subsystem & Sensors (ADC, IMU, Temp) | ✅ Ready | [25_iio_sensor](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/02_iio_sensor/README.md) | [Doc 25](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/25_iio_subsystem.md) |
 | | Linux Input Subsystem & Virtual Controller Driver | ✅ Ready | [26_input_subsystem](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/03_input_subsystem/README.md) | [Doc 26](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/26_input_subsystem.md) |
 | | Watchdog Timer Subsystem & Heartbeat Daemon Driver | ✅ Ready | [27_watchdog_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/04_watchdog_driver/README.md) | [Doc 27](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/27_watchdog_subsystem.md) |
+| | Linux PWM (Pulse Width Modulation) Subsystem | ✅ Ready | [28_pwm_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/05_pwm_driver/README.md) | [Doc 28](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/28_pwm_subsystem.md) |
 
 For the full detailed curriculum and architecture roadmap, see the [Curriculum Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/README.md).
 
