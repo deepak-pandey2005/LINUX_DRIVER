@@ -54,6 +54,7 @@ LINUX_DRIVER/
 | | USB Device Driver & URB Subsystem (`usb_driver`, URBs) | ✅ Ready | [22_usb_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/07_advanced_subsystems/02_usb_driver/README.md) | [Doc 22](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/22_usb_device_drivers.md) |
 | | Tracing, Debugging, Kprobes & Ftrace Diagnostics | ✅ Ready | [23_debugging](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/07_advanced_subsystems/03_debugging_and_tracing/README.md) | [Doc 23](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/23_kernel_debugging_and_tracing.md) |
 | **Phase 8: Specialized Protocols** | SPI Bus Driver Subsystem (`spi_controller`, `spi_driver`, full-duplex) | ✅ Ready | [24_spi_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/01_spi_driver/README.md) | [Doc 24](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/24_spi_bus_driver.md) |
+| | Industrial I/O (IIO) Subsystem & Sensors (ADC, IMU, Temp) | ✅ Ready | [25_iio_sensor](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/02_iio_sensor/README.md) | [Doc 25](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/25_iio_subsystem.md) |
 
 For the full detailed curriculum and architecture roadmap, see the [Curriculum Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/README.md).
 
