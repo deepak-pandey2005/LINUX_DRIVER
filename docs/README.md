@@ -102,6 +102,7 @@ graph TD
 ### **Phase 8: Specialized Hardware Subsystems & Protocols**
 - **24_spi_bus_driver** - Serial Peripheral Interface: `struct spi_controller`, `struct spi_driver`, `struct spi_transfer`, `struct spi_message`, full-duplex synchronous/asynchronous transfers (`spi_sync`, `spi_async`), clock polarity & phase modes (0-3), and mock SPI sensor emulation. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/01_spi_driver/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/24_spi_bus_driver.md).
 - **25_iio_subsystem** - Industrial I/O framework: `struct iio_dev`, `struct iio_info`, channel descriptors (`struct iio_chan_spec`), analog voltage ADC, die temperature, 3-axis accelerometer, raw count to SI engineering unit scaling (`read_raw`, `write_raw`), and sysfs telemetry. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/02_iio_sensor/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/25_iio_subsystem.md).
+- **26_input_subsystem** - Linux Input Subsystem: `struct input_dev`, event capabilities (`EV_KEY`, `EV_ABS`, `EV_REL`), runtime event synthesis (`input_report_key`, `input_report_abs`, `input_sync`), atomic event batching (`SYN_REPORT`), and `/dev/input/eventX` user-space consumption. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/03_input_subsystem/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/26_input_subsystem.md).
 
 ---
 
