@@ -99,6 +99,9 @@ graph TD
 - **22_usb_device_drivers** - USB Subsystem architecture, `struct usb_driver`, device identification table (`usb_device_id`), endpoints & descriptors (bulk, interrupt, isochronous), and asynchronous USB Request Blocks (URBs). See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/07_advanced_subsystems/02_usb_driver/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/22_usb_device_drivers.md).
 - **23_kernel_debugging_and_tracing** - Dynamic debug (`pr_debug`), Kprobes (`struct kprobe`, `pre_handler`, `post_handler`), Ftrace, eBPF tracing, memory leak detection with Kmemleak, and deciphering kernel panics. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/07_advanced_subsystems/03_debugging_and_tracing/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/23_kernel_debugging_and_tracing.md).
 
+### **Phase 8: Specialized Hardware Subsystems & Protocols**
+- **24_spi_bus_driver** - Serial Peripheral Interface: `struct spi_controller`, `struct spi_driver`, `struct spi_transfer`, `struct spi_message`, full-duplex synchronous/asynchronous transfers (`spi_sync`, `spi_async`), clock polarity & phase modes (0-3), and mock SPI sensor emulation. See [Code Lab](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/01_spi_driver/README.md) and [Architecture Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/24_spi_bus_driver.md).
+
 ---
 
 ## 🛠️ System Requirements & Quick Start
