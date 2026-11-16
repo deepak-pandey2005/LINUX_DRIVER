@@ -30,7 +30,8 @@ SUBDIRS := 01_module_basics/01_hello_world \
            08_specialized_subsystems/05_pwm_driver \
            08_specialized_subsystems/06_crypto_api \
            08_specialized_subsystems/07_pci_driver \
-           08_specialized_subsystems/08_power_management
+           08_specialized_subsystems/08_power_management \
+           08_specialized_subsystems/09_rtc_driver
 
 .PHONY: all clean help $(SUBDIRS)
 
