@@ -56,6 +56,7 @@ LINUX_DRIVER/
 | **Phase 8: Specialized Protocols** | SPI Bus Driver Subsystem (`spi_controller`, `spi_driver`, full-duplex) | ✅ Ready | [24_spi_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/01_spi_driver/README.md) | [Doc 24](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/24_spi_bus_driver.md) |
 | | Industrial I/O (IIO) Subsystem & Sensors (ADC, IMU, Temp) | ✅ Ready | [25_iio_sensor](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/02_iio_sensor/README.md) | [Doc 25](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/25_iio_subsystem.md) |
 | | Linux Input Subsystem & Virtual Controller Driver | ✅ Ready | [26_input_subsystem](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/03_input_subsystem/README.md) | [Doc 26](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/26_input_subsystem.md) |
+| | Watchdog Timer Subsystem & Heartbeat Daemon Driver | ✅ Ready | [27_watchdog_driver](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/08_specialized_subsystems/04_watchdog_driver/README.md) | [Doc 27](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/27_watchdog_subsystem.md) |
 
 For the full detailed curriculum and architecture roadmap, see the [Curriculum Guide](file:///home/deepak/OPENSOURCE/LINUX_DRIVER/docs/README.md).
 
